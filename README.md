@@ -108,3 +108,29 @@ open_project /path/to/your/project.xpr
 report_ip_status -all > /path/to/ip_status_report.txt
 ## d. Close the project and exit the Vivado TCL shell:
 close_project
+```
+
+
+## 📄 Related Publication
+
+If you find this project helpful, please consider citing our related work:
+
+> **Feng Yu, Hongshi Tan, Xinyu Chen, Yao Chen, Bingsheng He, and Weng-Fai Wong.**  
+> *Clementi: Efficient Load Balancing and Communication Overlap for Multi-FPGA Graph Processing*.  
+> Proceedings of the ACM on Management of Data (PACMMOD), Vol. 3, No. 3 (SIGMOD), Article 138, June 2025.  
+> [https://doi.org/10.1145/3725275](https://doi.org/10.1145/3725275)
+
+### BibTeX
+```bibtex
+@article{yu2025clementi,
+  title     = {Clementi: Efficient Load Balancing and Communication Overlap for Multi-FPGA Graph Processing},
+  author    = {Feng Yu and Hongshi Tan and Xinyu Chen and Yao Chen and Bingsheng He and Weng-fai Wong},
+  journal   = {Proceedings of the ACM on Management of Data (PACMMOD)},
+  volume    = {3},
+  number    = {3 (SIGMOD)},
+  article   = {138},
+  year      = {2025},
+  month     = {June},
+  doi       = {10.1145/3725275},
+  publisher = {ACM}
+}
