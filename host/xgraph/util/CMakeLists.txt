@@ -1,0 +1,22 @@
+SET(IO_SRC_FILE_LIST
+        io/io.cpp)
+
+SET(GRAPH_SRC_FILE_LIST
+        graph/graph.cpp)
+
+SET(LOG_SRC_FILE_LIST
+        log/log.cpp)
+
+ADD_LIBRARY(io SHARED ${IO_SRC_FILE_LIST})
+
+ADD_LIBRARY(graph SHARED ${GRAPH_SRC_FILE_LIST})
+TARGET_LINK_LIBRARIES(graph PRIVATE OpenMP::OpenMP_CXX)
+
+ADD_LIBRARY(log SHARED ${LOG_SRC_FILE_LIST})
+TARGET_LINK_LIBRARIES(log PRIVATE OpenMP::OpenMP_CXX)
+
+ADD_EXECUTABLE(play.out play_ground.cpp)
+TARGET_LINK_LIBRARIES(play.out graph log)
+
+ADD_EXECUTABLE(omp_play.out openmp_playground.cpp)
+TARGET_LINK_LIBRARIES(omp_play.out PRIVATE OpenMP::OpenMP_CXX)
